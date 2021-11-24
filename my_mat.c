@@ -44,10 +44,10 @@ void Floyd_Warshall(int Mat[10][10]){   //Mat[i][j]-i row //Mat[i][j]- j colomn
 // if there is not return 0
 void containPath( int Mat[10][10],int i, int j){
     if (Mat[i][j] == 0){
-        return "False";
+        printf("False");
     }
     else{
-        return "True";
+        printf("True");
     }
 }
 //this function check the weight between 2 vertix
