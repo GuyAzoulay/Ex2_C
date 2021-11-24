@@ -18,7 +18,7 @@ int main()
 	if(c == 'B'){
 	scanf("%d",&i);
 	scanf("%d",&j);
-	contaionPath(Mat, i , j);
+	containPath(Mat, i , j);
 	}
 	if(c == 'C'){
 	scanf("%d",&i);
