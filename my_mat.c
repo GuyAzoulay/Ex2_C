@@ -25,7 +25,9 @@ int val;
 void Floyd_Warshall(int Mat[10][10]){   //Mat[i][j]-i row //Mat[i][j]- j colomn
     for (int k = 0; k <= 9; k++){
         for (int i = 0; i <= 9 ; i++){
+		if (i == k) continue;
             for (int j = 0; j <= 9; j++){
+		    if (j == k) continue;
 		     if(i == j){
 			Mat[i][j]=0;
             		}
