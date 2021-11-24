@@ -35,7 +35,7 @@ void Floyd_Warshall(int Mat[10][10]){   //Mat[i][j]-i row //Mat[i][j]- j colomn
 		else if(i == j){
 			Mat[i][j]=0;
             }
-		else if(arr[i][j] == 0 && (arr[i][k] == 0 || arr[k][j] == 0)) Mat[i][j]=0;
+		else if(Mat[i][j] == 0 && (Mat[i][k] == 0 || Mat[k][j] == 0)) Mat[i][j]=0;
             
         }
         
