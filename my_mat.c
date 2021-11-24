@@ -50,17 +50,17 @@ void Floyd_Warshall(int Mat[10][10]){   //Mat[i][j]-i row //Mat[i][j]- j colomn
 // if there is not return 0
 void containPath( int Mat[10][10],int i, int j){
     if (Mat[i][j] == 0){
-        printf("False");
+        printf("False\n");
     }
     else{
-        printf("True");
+        printf("True\n");
     }
 }
 //this function check the weight between 2 vertix
 // if there is no weight between the 2 vertis return 0
 void weight(int Mat[N][N], int i, int j){
-    if(Mat[i][j] == 0) printf("-1");
-    else printf("%d",Mat[i][j]);
+    if(Mat[i][j] == 0) printf("-1\n");
+    else printf("%d\n",Mat[i][j]);
     
 }
 //finding the minimun between 2 integers
