@@ -26,22 +26,23 @@ void Floyd_Warshall(int Mat[10][10]){   //Mat[i][j]-i row //Mat[i][j]- j colomn
     for (int k = 0; k <= 9; k++){
         for (int i = 0; i <= 9 ; i++){
             for (int j = 0; j <= 9; j++){
-            if(Mat[i][j] != 0 && Mat[i][k] != 0 && Mat[k][j] != 0){
-                    Mat[i][j] =  find_minimum(Mat[i][j], Mat[i][k]+Mat[k][j]);
-                }
-                else if (Mat[i][j]==0 && i != j && Mat[i][k] != 0 && Mat[k][j] != 0){
-                    Mat[i][j]= Mat[i][k] + Mat[k][j];
-                }
-		else if(i == j){
+		     if(i == j){
 			Mat[i][j]=0;
-            }
-		else if(Mat[i][j] == 0 && (Mat[i][k] == 0 || Mat[k][j] == 0)) Mat[i][j]=0;
-            
-        }
+            		}
+		     else if(Mat[i][j] == 0 && (Mat[i][k] == 0 || Mat[k][j] == 0)){ 
+			     Mat[i][j]=0;
+		     }
+		      else if (Mat[i][j]==0){
+                      Mat[i][j]= Mat[i][k] + Mat[k][j];
+                     }
+          	      else if(Mat[i][j] != 0 && Mat[i][k] != 0 && Mat[k][j] != 0){
+                      Mat[i][j] =  find_minimum(Mat[i][j], Mat[i][k]+Mat[k][j]);
+		      } 
+      		  }
         
-    }
+   	     }
 
-}
+	}
 }
 //this function checks if there is a path between 2 vertis, if // there is return 1
 // if there is not return 0
