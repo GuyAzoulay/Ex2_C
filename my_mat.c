@@ -41,6 +41,7 @@ void Floyd_Warshall(int Mat[10][10]){   //Mat[i][j]-i row //Mat[i][j]- j colomn
     }
 
 }
+}
 //this function checks if there is a path between 2 vertis, if // there is return 1
 // if there is not return 0
 void containPath( int Mat[10][10],int i, int j){
