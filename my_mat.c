@@ -4,10 +4,6 @@
 int Mat[N][N];
 void Floyd_Warshall(int Mat[N][N]);
 int find_minimum(int,int);
-void fill_Mat(int Mat[N][N]);
-int weight(int Mat[N][N], int i, int j);
-int containPath( int [N][N],int i, int j);
-
 
 //this func's aim is to fill the matrix with values from the //user and than
 // check all the necessary things we asked to implement
