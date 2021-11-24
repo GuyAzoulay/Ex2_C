@@ -13,7 +13,7 @@ int main()
   	{
 	scanf("%s", &c);
 	if(c == 'A'){
-		fill_Mat(Mat)
+		fill_Mat(Mat);
 	}
 	if(c == 'B'){
 	scanf("%d",&i);
