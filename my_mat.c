@@ -53,14 +53,8 @@ void containPath( int Mat[10][10],int i, int j){
 //this function check the weight between 2 vertix
 // if there is no weight between the 2 vertis return 0
 void weight(int Mat[N][N], int i, int j){
-    int connect= containPath(Mat , i , j);
-    if (connect==0)
-    {
-        printf("-1");
-    }
-    else{
-        printf("%d",Mat[i][j]);
-    }
+    if(Mat[i][j] == 0) printf("-1");
+    else printf("%d",Mat[i][j]);
     
 }
 //finding the minimun between 2 integers
